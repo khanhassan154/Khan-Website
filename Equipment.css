@@ -1,0 +1,2050 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.all-btn{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.all-btn{
+    width: fit-content;
+    position: relative;
+    display: inline;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #bb0000;
+    background: white;
+    padding: 10px 30px;
+    box-shadow: inset -2px -2px 5px rgb(0 0 0 / 45%),inset 2px 2px 5px rgb(171 26 31 / 60%);
+    transition:  all .2s;
+    text-align: center;
+}
+@media screen and (max-width: 1332px) {
+    .all-btn{
+        font-size: 0.8rem;
+    }
+}
+@media screen and (max-width: 695px) {
+    .all-btn{
+        font-size: .7rem;
+    }
+}
+@media screen and (max-width: 490px) {
+    .all-btn{
+        font-size: .6rem;
+    }
+}
+@media screen and (max-width: 390px) {
+    .all-btn{
+        padding: 10px 15px;
+        font-size: .5rem;
+    }
+}
+@media screen and (max-width: 347px) {
+    .all-btn{
+        padding: 10px 12px;
+    }
+}
+.all-btn:hover{
+    box-shadow: #bb0000 0 0 10px 1px ,inset 2px 2px 5px rgb(0 0 0 / 45%),inset -2px -2px 5px rgb(171 26 31 / 60%);
+    background: #bb0000;
+    color: white;
+    
+}
+.all-btn span{
+    position: absolute;
+    display: block;
+    background: white;
+}
+.all-btn span:nth-child(1){
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 1px;
+    transform-origin: left;
+    transform:  scaleX(0);
+    transition: transform 0.2s;
+    transition-delay: .45s;
+}
+.all-btn:hover span:nth-child(1){
+    transition: transform .2s;
+    transform: scaleX(1);
+}
+.all-btn span:nth-child(2){
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    transform-origin: top;
+    transform:  scaleY(0);
+    transition:  transform 0.2s;
+    transition-delay: .3s;
+}
+.all-btn:hover span:nth-child(2){
+    transition: transform 0.2s;
+    transform: scaleY(1);
+    transition-delay: .1s;
+}
+.all-btn span:nth-child(3){
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform 0.2s;
+    transition-delay: .15s;
+}
+.all-btn:hover span:nth-child(3){
+    transition: transform 0.2s;
+    transform: scaleX(1);
+    transition-delay: .2s;
+}
+.all-btn span:nth-child(4){
+    left: 0;
+    bottom: 0;
+    width: 1px;
+    height: 100%;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform 0.2s;
+}
+.all-btn:hover span:nth-child(4){
+    transition: transform 0.2s;
+    transform: scaleY(1);
+    transition-delay: .3s;
+}
+html{
+    overflow-x: hidden;
+}
+body{
+    height: 100%;
+    font-family: 'Poppins', serif;
+    scrollbar-width: thin;
+    scrollbar-color: #6969dd #e0e0e0;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-track{
+    background-color: darkgrey;
+}
+body::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #ff0303;
+    border-radius: 10px;
+}
+.main{
+    position: static;
+}
+#preloader{
+    background: #000 url(assets/spide-loader.gif) no-repeat center center;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 4000;
+}
+.boost-link {
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    width: fit-content;
+    gap: 3vw;
+    justify-content: center;
+}
+/* slideshow */
+
+.social{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0);
+    pad: 25px 35px;
+    transition: .5s;
+    border-bottom: 1px solid #fff;
+    display: flex;
+}
+.social-icons{
+    padding: 10px;
+    width: auto;
+    background-color: transparent;
+}
+.more-icons{
+    width: fit-content;
+    display: flex;
+}
+.social-right-icons{
+    display: inline;
+    width: auto;
+    background: transparent;
+    float: right;
+    margin-top: 6px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.fa,.bx {
+    width: 45px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: auto;
+    margin-bottom: auto;
+    display: block;
+    transition: all .2s;
+     
+}
+.social,.fa,.bx{
+    padding: 5px 10px;
+    color: white;
+    font-size: x-large;
+}
+.icon{
+    color: white;
+    opacity: .8;
+}
+.social{
+    display: flex;
+}
+.social-icons{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.more-icons{
+    gap: 1vw;
+}
+
+.icon:hover{
+    opacity: .6;
+    transition: all .2s;
+    color: red;
+}
+
+.phone{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    border-radius: 1px;
+    padding: 8px 25px 0 12px;
+    height: 35px;
+    width: 190px;
+    float: right;
+    transition: all .5s;
+    display: inline-flex;
+}
+.phone a{
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+.small-phone-icon{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    border-radius: 1px;
+    padding:6px 2px 0 2px;
+    height: 35px;
+    float: right;
+    transition: all .5s;
+    display: none;
+}
+.social.phone{
+    padding-left: 10px;
+}
+.small-phone-icon:hover{
+    background: #bb0000;
+    transition: all .5s ease-in-out;
+}
+.box:hover.phone:hover{
+    background: rgb(204, 39, 39);
+    transition: all .5s linear;
+}
+.social .social-icons .search-container{
+    float: right;
+    padding-right: 20px;
+}
+.right-box{
+    width: 100%;
+}
+.right-system{
+    float: right;
+}
+.right-box .search-box{
+    align-items: center;
+    width: auto;
+    height: 30px;
+    display: flex;
+    cursor: pointer;
+    margin: 7px 30px;
+    align-items: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: .5s;
+}
+.search-box:hover input{
+    width: 300px;
+    padding-left: 10px;
+    font-size: 12px;
+}
+.search-box:hover .bx{
+    background: #bb0000;
+    color: #f2f2f2;
+}
+.search-box:hover{
+    background-color: #f2f2f2;
+}
+.search-box input{
+    width: 0;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    transition: 0.8s;
+    background: transparent;
+    font-size: 0;
+}
+.search-box a .bx{
+    font-size: 18px;
+    height: 30px;
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+.navbar1{
+    transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+nav{
+    width: 100%;
+    height: 3cm;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: transparent;
+    transition: all .5s;
+    position: relative;
+    z-index: 2000;
+}
+.navbar-icons{
+    float: center;
+    width: 100px;
+    background-color: transparent;
+}
+.navbar-top{
+    top: 0;
+    bottom: 50%;
+    transition: all .5s;
+    z-index: 2000;
+}
+header{
+    height: 0;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    z-index: 2000; 
+}
+@media screen and (max-width: 768px) {
+    nav{
+        background: #000;
+    }
+    header.header{
+        height: 100%;
+    }
+    header.header{
+        margin: 0 0px;
+        transition: all .5s;
+    }
+    .BgColour{
+        display: flex;
+        transition: all .5s;
+    }
+    .social{
+        display: none;
+    }
+}
+.header{
+    margin: 0 40px;
+}
+.nav-links{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    text-align: center;
+}
+li{
+    display: inline;
+}
+li .a1,.a2,.a3,.a4,.a5,.a6,.a7{
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    color: #a1a1a1;
+    background-image: linear-gradient(to right, #bb0000 50%, transparent 50%);
+    background-size: 200% 3px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    text-align: left;
+    transition: background-position .3s;
+}
+li .a6 span{
+    background: #bb0000;
+}
+li .quotation{
+    font-size: 11px;
+    position: relative;
+    font-weight: bold;
+    padding:8px;
+    display: inline-flex;
+    text-transform: uppercase;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+li .quotation{
+    background-color: #bb0000;
+    transition: color 0.25s 0.133333333s,box-shadow 0.33s ease-out;
+    box-shadow: inset -2px -2px 5px rgb(0 0 0 / 45%),inset 2px 2px 5px rgb(171 26 31 / 60%);
+}
+.quotation:hover{
+    background: white;
+    color: #bb0000;
+    transition: all .5s;
+    outline: solid 1px #bb0000;
+}
+nav .nav-links li, a.a6{
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+nav .nav-links li .a1,.a3,.a4,.a5,.a2,.a7{
+    padding: 10px 0;
+}
+nav .nav-links li .a6{
+    padding: 10px 10px;
+    font-size: 10px;
+}
+nav .nav-links li{
+    padding-right: 25px;
+}
+li .a1:hover,.a2:hover,.a3:hover,.a4:hover,.a5:hover,.a6:hover,.a7:hover{
+    background-position: 1% 100%;
+    color: #fff;
+    transition:  all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+}
+li a.active6{
+    background-color: #bb0000;
+    transition: color 0.25s 0.133333333s,box-shadow 0.33s ease-out;
+    box-shadow: inset -2px -2px 5px rgb(0 0 0 / 45%),inset 2px 2px 5px rgb(171 26 31 / 60%);
+    position: relative;
+}
+a.active6:hover{
+    background: white;
+    color: #bb0000;
+    transition: all .5s;
+}
+nav .a1,.a2,.a3,.a4,.a5,.a6,.a7,.quotation{
+    color: #ffffff;
+    text-decoration: none;
+
+}
+button{
+    width: 100px;
+    height: 40px;
+    justify-content: space-between;
+}
+.logo{
+    height: 80px;
+    padding: 5px 0 5px 15px;
+  
+}
+.BgColour {
+    color: black;
+    transition: all 1s;
+    background-color: black;
+    border-bottom: 1px solid lightgray;
+    position: fixed;
+    width: 100%;
+}
+.size{
+    padding-right: 7px;
+    background-color: red;
+    font-size: xx-large;
+    width: fit-content;
+    float: right;
+ 
+}
+.bars{
+    font-size: 45px;
+    padding-top: 1px;
+    padding-bottom: 15px;
+    display: none;
+}
+.hide{
+    width: 5px;
+    height: 5px;
+    padding-bottom: 50px;
+    padding-right: 100px;
+}
+.signin{
+    float: right;
+    padding: 5px 10px;
+    transition: all .5s;
+    margin: 2px 20px;
+}
+.signin:hover{
+    background: #bb0000;
+}
+.signin a{
+    text-decoration: none;
+    color: #f2f2f2;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+    align-items: center;
+    float: right;
+}
+.cart{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    border-radius: 1px;
+
+    height: 35px;
+    float: right;
+    transition: all .5s;
+}
+.cart:hover{
+    opacity: .4;
+    transition: all .2s;
+}
+.fa-sign-in{
+    padding-right: 10px;
+
+}
+i{
+    padding-right: 10px;
+}
+.icons{
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    right: 0;
+}
+.search-container2{
+    display: none;
+}
+
+.drop-down{
+    display: none;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 300px;
+    height: 0;
+    background: rgba(34, 30, 30, 0.658);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .5s cubic-bezier(0.175, 0.885, 0.32, .5);
+}
+.drop-down li{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.drop-down .active2{
+    font-size: 10px;
+    padding: 10px;
+}
+.drop-down li .drop{
+    padding-right: 10px;
+}
+.drop-down .quotation{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.drop-search{
+    height: fit-content;
+    display: none;
+}
+.drop-search input{
+    height: 29px;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.drop-search .bx{
+    font-size: 18px;
+    background-color: #bb0000;
+}
+.open{
+    height: 500px;
+    display: block;
+    transition: height 1s cubic-bezier(0.175, 0.885, 0.32, .5);
+}
+.cart-login-icons{
+    display: none;
+}
+.cart-login a{
+    text-decoration: none;
+    color: white;
+}
+.cart-login .fa-shopping-cart:hover{
+    opacity: .4;
+}
+footer{
+    align-items: end;
+    background: transparent;
+    background-size: cover;
+    background-position: center center;
+}
+.footer{
+    width: 100%;
+    display: flex;
+}
+.my-rights{
+    width: 100%;
+}
+.logo-footer{
+    height: 70px;
+    float: left;
+}
+.footer .trademark-heading{
+    font-size: 10px;
+    display: flex;
+    float: center;
+    text-align: center;
+    justify-self: center;
+}
+.widgets{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    color: #a1a1a1;
+    height: 10cm;
+}
+.container{
+    width: 100%;
+    border-top: 10px solid #bb0000;
+    position: relative;
+    overflow: hidden;
+    padding: 40px;
+    justify-content: space-around;
+    display: flex;
+    gap: 10vw;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+@media screen and (width: 2560px) {
+    .container{
+        height: fit-content;
+    }
+}
+.container2{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 1);
+    height: 23cm;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    width: 100%;
+    justify-content: space-between;
+}
+.details{
+    height: fit-content;
+}
+.info{
+    height: fit-content;
+}
+.equipments{
+    height: fit-content;
+}
+.widgets .details{
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: max(1.3vw,17px);
+    width: 20cm;
+    margin: 0;
+}
+.details h3{
+    border-left: 10px solid #bb0000;
+    border-right: 10px solid #bb0000;
+    max-width: fit-content;
+    padding: 10px;
+    font-size: 20px;
+}
+.details .about-khan{
+    padding-top: 10px;
+    font-size: 14px;
+    font-weight: lighter;
+    width: 650px;
+    display: block;
+    color: #bbb;
+
+}
+.details .links-of-footer{
+    display: flex;
+    justify-content: start;
+    width: fit-content;
+}
+.footer-links{
+    gap: 3vw;
+}
+.footer-all-links .footer-links{
+    padding: 20px 0;
+}
+.details .footer-links li .eqp .quot{
+    font-size: 10px;
+    padding: 0 10px;
+    text-transform: uppercase;
+    font-weight: lighter;
+    background-color: transparent;
+    
+}
+.footer-links li a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 13px;
+}
+.footer-links li .button{
+    color: white;
+    background: #bb0000;
+    letter-spacing: 0;
+    gap: 3vw;
+}
+.footer-links li .button:hover{
+    box-shadow: #bb0000 0 0 10px 1px ,inset 2px 2px 5px rgb(0 0 0 / 45%),inset -2px -2px 5px rgb(171 26 31 / 60%);
+    background: white;
+    color: #bb0000;    
+}
+.footer-links li .button span{
+    background: #bb0000;
+}
+.details .footer-icons{
+   display: flex;
+   margin: 0;
+   padding: 10px 0;
+   gap: 3vw;
+   width: fit-content;
+}
+.details .footer-icons a{
+    border: none;
+    font-size: 25px;
+}
+.details .footer-icons a:hover{
+    background: none;
+    opacity: .5;
+}
+.equipments{
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: max(1.3vw,17px);
+    width: fit-content;
+}
+.equipments h3{
+    border-left: 10px solid #bb0000;
+    border-right: 10px solid #bb0000;
+    max-width: fit-content;
+    padding: 10px;
+
+}
+.equipments .eqp-machines li{
+    display: block;
+    padding-top: 5px;
+}
+.equipments .eqp-machines li a{
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #a1a1a1;
+    background-image: linear-gradient(to right, #bb0000 50%, transparent 50%);
+    background-size: 200% 3px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    text-align: left;
+    transition: background-position .3s;
+}
+.equipments .eqp-machines li a:hover{
+    background-position: 1% 100%;
+    color: #fff;
+    transition:  all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.equipments .eqp-machines .learn-more{
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 0px;
+    padding: 0;
+    margin: 0;
+}
+.learn-more{
+    padding-top: 20px;
+    margin: 0;
+}
+.learn-more a{
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #bb0000;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.info{
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: max(1.3vw,17px);
+    width: fit-content;
+}
+.info h3{
+    border-left: 10px solid #bb0000;
+    border-right: 10px solid #bb0000;
+    max-width: fit-content;
+    padding: 10px;
+}
+.info .info-links li{
+    display: block;
+    padding-top: 5px;
+}
+.info .info-links li a{
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: lighter;
+    text-decoration: none;
+    color: #a1a1a1;
+    background-image: linear-gradient(to right, #bb0000 50%, transparent 50%);
+    background-size: 200% 3px;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    text-align: left;
+    transition: background-position .3s;
+}
+.info .info-links li a:hover{
+    background-position: 1% 100%;
+    color: #fff;
+    transition:  all .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.equipments2{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.info2{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.container2{
+    display: none;
+}
+.footer{
+    background-color: #252424;
+    color: #fff;
+    display: inline-flex;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+}
+.footer .logo-footer{
+    height: 50px;
+}
+.footer .logo-footer-mobile{
+    display: none;
+}
+.footer p{
+    align-items: center;
+    margin: auto;
+    display: block;
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+/* Main */
+.main-wrapper{
+    height: 100%;
+}
+.contact-title-bg{
+    width: 100%;
+    min-height: max(35vh,32rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(assets/equipment\ image.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.contact-title-bg::before{
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 65%);
+}
+.contact-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: max(10vh,4rem) max(2vh,2rem);
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: #fff;
+    text-align: center;
+}
+.contact-title{
+    font-size: max(2vw,2.75rem);
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-shadow: 0em 0.18em 0.27em rgb(0 0 0 / 24%);
+    margin: 0;
+    border-bottom: 10px solid #bb0000;
+    padding: 0 0 10px;
+}
+.contact-description{
+    font-size: max(.5vw,15px);
+    font-weight: 100;
+    font-family: 'Poppins',sans-serif;
+    border-bottom: 10px solid #bb0000;
+    padding: 20px 0;
+}
+.equipment-line{
+    display: block;
+    height: fit-content;
+}
+.equipment{
+    display: flex;
+    width: 100%;
+}
+.equipment .equipment-pic,.equipment .details-pic{
+    width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 1070px) {
+    .equipment{
+        display: block;
+        border: 30px solid #bb0000;
+    }
+    .equipment2{
+        rotate: 180deg;
+    }
+    .rotation{
+        rotate: 180deg;
+    }
+}
+.equipment-pic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.equipment-pic img{
+    width: max(500px) min(100px);
+    height: auto;
+}
+@media screen and (max-width:520px) {    
+.equipment-pic img{
+    width: 100%;
+    height: auto;
+}
+}
+.details-pic{
+    background: #bb0000;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+.details-btn{
+    box-shadow: none;
+}
+.details-btn span{
+    background: #fff;
+}
+.details-btn:hover{
+    background: #fff;
+    color: #bb0000;
+}
+.support-section-contact{
+    background-image: url(assets/equipment\ image.png);
+    background-color: rgb(255 0 0 / 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+.support-section-contact::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(0 0 0 / 80%);
+    display: block;
+}
+.support-section-wrapper {
+    margin: max(7.5vh,2.5rem) auto;
+    display: flex;
+    gap: 3vw;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 85vmax;
+    position: relative;
+}
+.support-section-wrapper .section-title{
+    color: #bb0000;
+    text-align: center;
+}
+.section-title{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;    
+    text-shadow: 0em 0.18em 0.27em rgb(0 0 0 / 24%);
+} 
+@media screen and (max-width: 648px) {
+    .section-title{
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 470px) {
+    .section-title{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .section-title{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width: 300px) {
+    .section-title{
+        font-size: 17px;
+    }
+    .section-content{
+        font-size: 8px;
+    }
+    .support-section-wrapper{
+        gap: 4vw;
+        margin: 20px auto;
+    }
+}
+.support-section-wrapper .section-content{
+    text-align: center;
+    color: #fff;
+    font-size: max(1vw,16px);
+    line-height: 1.4;
+    max-width: max(50vw,75%);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vw;
+    position: relative;
+    font-weight: lighter;
+}
+@media screen and (max-width: 900px) {
+    .support-section-wrapper .section-content{
+        font-size: 13px;
+    }
+}
+.section-btn{
+    background: #bb0000;
+    color: #fff;
+}
+.section-btn:hover{
+    background: white;
+    color: #bb0000;
+}
+.section-btn span{
+    background: #fff;
+}
+.section-btn:hover span{
+    background: #bb0000;
+}
+/* Responsive Material */
+@media screen and (width: 2560px) {
+    .details{
+        padding-top: 10px;
+        margin-top: auto;
+        margin-bottom: 100px;
+        display: block;
+    }
+    .container{
+        height: 18cm;
+    }
+    .container .about-khan{
+        width: 1000px;
+    }
+}
+
+
+@media screen and (max-width: 1580px) {
+    .logo{
+        height: 75px;
+    }
+    li{
+        display: inline;
+    }
+    li .a6{
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: transparent;
+        transition: .5s; 
+        text-align: center;
+    }
+    nav .nav-links li .a{
+        padding: 10px 10px;
+        text-align: center;
+    }
+    nav .nav-links .quota{
+        padding-top: 14px;
+    }
+   
+    nav .nav-links li{
+        padding-right: 25px;
+    }
+    .search-container,.social-icons .icon,.phone{
+        padding-bottom: 5px;
+        display: inline-block;
+    }
+    .search-container{
+        display: flex;
+    }
+    .phone{
+        display: inline-block;
+    }
+    .details h3{
+        align-items: center;
+    }
+    .footer-details-more{
+        font-size: 1px;
+        display: inline-block;
+        height: 3cm;
+        margin-left: 205px;
+        font-size: 5px;
+    }
+}
+@media screen and (max-width: 1506px){
+    nav{
+        height: 2cm;
+    }
+    .logo{
+        height: 70px;
+        padding: 10px;
+    }
+    li .a1,.a2,.a3,.a4,.a5,.a6,.a7,.quotation{
+        margin: 8px;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: transparent;
+        transition: .5s;  
+        display: flex;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+    li .quotation{
+        margin:8px;
+        font-size: 9px;
+        position: relative;
+        font-weight: bold;
+        margin-top:8px;
+        display: flex;
+        text-transform: uppercase;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    nav .nav-links{
+        padding-right: 8px;
+        display: flex;
+    }
+    .footer-details-more{
+        font-size: 1px;
+        display: inline-flex;
+        height: 3cm;
+        margin-left: 205px;
+        font-size: 5px;
+    }
+    
+}
+@media screen and (max-width: 1477px) {
+    .prev,.next{
+        top: 50%;
+    }
+    .details .about-khan{
+        padding: 10px 0;
+        font-size: 15px;
+        width: auto;
+    }
+    .about-khan{
+        margin: 0;
+    }
+    .footer-details-more{
+        font-size: 1px;
+        display: block;
+        height: 3cm;
+        margin-left: 205px;
+        font-size: 5px;
+    }
+}
+@media  screen and (max-width: 1332px) {
+    .about-khan{
+        font-size: small;
+        width: 440px;
+        padding-right: 13px;
+    }
+    .about-khan{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .container .button{
+        font-size: 10px;
+     
+    }
+    .equipments .eqp-machines li a{
+        font-size: 11px;
+    }
+    .equipments .learn-more li a{
+        font-size: 10px;
+    }
+    .info .info-links li a{
+        font-size: 11px;
+    }
+    .footer-details-more{
+        font-size: 1px;
+        display: block;
+        height: 3cm;
+        margin-left: 205px;
+        font-size: 5px;
+    }
+    .footer p{
+        padding: 15px 0 10px 350px;
+        display: inline-flex;
+    }
+}
+@media screen and (max-width: 1225px){
+    nav{
+        height: 2cm;
+    }
+    .logo{
+        height: 70px;
+    }
+    li .a1,.a2,.a3,.a4,.a5,.a6,.a7,.quotation{
+        margin: 4px;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: transparent;
+        transition: .5s;  
+        display: flex;
+    }
+    li .quotation{
+        margin: 4px;
+        font-size: 10px;
+        position: relative;
+        font-weight: bold;
+        margin-top:4px;
+        display: flex;
+        text-transform: uppercase;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+    nav .nav-links{
+        padding-right: 8px;
+        display: flex;
+    }
+    .footer-details-more{
+        font-size: 1px;
+        display: block;
+        height: 3cm;
+        margin-left: 205px;
+        font-size: 5px;
+    }
+    .about-khan{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    
+    .eqp-display, .info-display{
+        display: none;
+    }
+    nav{
+        height: 2cm;
+    }
+    .logo{
+        height: 70px;
+        display: flex;
+    }
+    .nav-links li{
+        display: none;
+    }
+    .drop-down{
+        display: block;
+    }
+    .search-container,.social-icons .icon,.phone{
+        font-size: 18px;
+        padding-top: 3px;
+    }
+    .phone{
+        display: none;
+        padding-top: 7px;
+        width: 190px;
+    }
+    .icon {
+        width: 40px;
+        text-align: center;
+        text-decoration: none;
+         
+    }
+    .social,.icon{
+        padding: 3px 3px;
+        color: white;
+        font-size: x-large;
+    }
+    .search-container{
+        display: none;
+    }
+    .phone{
+        padding-bottom: 20px;
+    }
+    
+    .icons{
+        display: inline-flex;
+    }
+    #close-icon{
+        display: none;
+    }
+    .container .footer-icons{
+        padding: 0;
+        padding-top: 10px;
+    }
+    .small-phone-icon{
+        font-size: 15px;
+        display: flex;
+    }
+    .cart{
+        font-size: 15px;
+    }
+    .signin{
+        font-size: 15px;
+    }
+    .footer-details-more{
+        font-size: 1px;
+        display: block;
+        height: 3cm;
+        margin-left: 205px;
+        font-size: 5px;
+    }
+    .about-khan{
+        text-align: center;
+        width: auto;
+    }
+    .details .footer-all-links{
+        display: flex;
+        gap: 15vw;
+        justify-content: center;
+        padding-top: 20px;
+    }
+    .links-of-footer{
+        width: 100%;
+    }
+    .footer-links{
+        width: auto;
+        display: flex;
+        gap: 3vw;
+    }
+    .details .main-heading-footer{
+        margin: auto;
+        display: block;
+        width: 100%;
+    }
+    .details h3{
+        margin: auto;
+        display: block;
+    }
+    .container2{
+        display: flex;
+        height: 15cm;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .footer-all-links .footer-links{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 888px) {
+    nav{
+        height: 2cm;
+    }
+    .logo{
+        height: 70px;
+        display: flex;
+    }
+    .signin a{
+        font-size: 10px;
+    }
+    .social-icons{
+        padding: 0;
+    }
+    li .a1,.a2,.a3,.a4,.a5,.quotation{
+        margin-left: 10px;
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        background-color: transparent;
+        transition: .5s;  
+        display: inline-flex;
+    }
+    nav .nav-links{
+        padding: 0;
+        display: flex;
+    }
+    .search-container,.social-icons .icon,.phone{
+        font-size: 13px;
+        padding-bottom: 3px;
+        display: inline-block;
+    }
+    .search-container{
+        display: flex;
+        height: fit-content;
+        width: auto;
+    }
+    .phone{
+        display: none;
+        padding-top: 7px;
+    }
+    .icon {
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .social,.icon{
+        padding: 5px 5px;
+        color: white;
+        font-size: x-large;
+    }
+    .search-container{
+        display: none;
+    }
+    .phone{
+        padding-bottom: 20px;
+        padding-left: 25px;
+    }
+    .icons{
+        display: flex;
+    }
+    #close-icon{
+        display: none;
+    }
+    .eqp-display,.info-display{
+        display: none;
+    }
+    .details{
+        margin: auto;
+    }
+    .small-phone-icon{
+        font-size: 12px;
+        display: flex;
+    }
+    .cart{
+        font-size: 12px;
+    }
+    .signin{
+        font-size: 12px;
+    }
+    .footer-details-more{
+        font-size: 1px;
+        display: block;
+        height: 3cm;
+        margin-left: 205px;
+        font-size: 5px;
+    }
+    .footer-details-more .rights{
+        font-size: 8px;
+    }
+    .footer p{
+        padding: 15px 0 10px 200px;
+        display: inline-flex;
+    }
+    .about-khan{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .container .footer-links{
+        padding-right: -10px;
+        margin-right: 0;
+    }
+    .footer-all-links .footer-links{
+        padding: 0;
+    }
+}
+@media screen  and (max-width: 768px){
+    .container{
+        height: fit-content;
+    }
+    .container2{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .container h3{
+        font-size: 16px;
+    }
+    .container .about-khan{
+        font-size: 13px;
+        width: 490px;
+        padding-right: 5px;
+    }
+    .container .footer-links{
+        padding-left: 80px;
+    }
+    .container .footer-icons{
+        padding-left: 160px;
+    }
+    .container .button{
+        font-size: 8px;
+     
+    }
+    .phone{
+        display: none;
+    }
+    .details{
+        margin-left: auto;
+    }
+    .footer-details-more{
+        font-size: 1px;
+        display: block;
+        height: 3cm;
+        margin-left: 205px;
+    }
+    .about-khan{
+        margin: 0;
+    }
+    .container .about-khan{
+        font-size: 10px;
+        width: auto;
+    }
+    .container .footer-links{
+        padding-left: 0px;
+    }
+    .container .footer-icons{
+        padding-left: 0
+    }
+    .details .footer-all-links{
+        gap: 5vw;
+    }
+    .footer-all-links .footer-links{
+        padding: 0;
+    }
+}
+@media screen and (max-width: 648px){
+    .footer p{
+        font-size: 15px;
+        display: block;
+        margin: auto;
+        padding: 0;
+        padding-top: 20px;
+    }
+    .logo-footer{
+        display: none;
+    }
+    .footer .logo-footer-mobile{
+        height: 50px;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+    }
+    .img-h2 .why-choose{
+        padding: 0;
+    }
+    .details h3{
+        font-size: 13px;
+    }
+    .container .about-khan{
+        font-size: 10px;
+        width: auto;
+        padding-right: 0px;
+    }
+    .container2{
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+    footer .details{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .footer-details-more{
+        font-size: 1px;
+        display: block;
+        height: 3cm;
+        margin-left: 205px;
+    }
+    .footer-details-more .rights{
+        font-size: 8px;
+    }
+    .container2 .mobile-eqp-details{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .details .footer-all-links{
+        display: block;
+        margin: auto;
+        height: 100%;
+    }
+    .footer-all-links .footer-links{
+        padding: 0;
+    }
+    .footer-all-links .links-of-footer{
+        margin: auto;
+        display: block;
+    }
+    .footer-all-links .footer-icons{
+        justify-content: center;
+        display: flex;
+        padding-top: 20px;
+    }
+    
+}   
+@media  screen and (max-width: 490px) {
+    .right-box{
+        display: none;
+    }
+    .details h3{
+        font-size: 12px;
+    }
+    .logo{
+        height: 60px;
+    }
+    .phone{
+        display: none;
+    }
+    .drop-down{
+        left: 2rem;
+        width: unset;
+        top: 80px;
+    }
+    .contact i{
+        display: none;
+    }
+    .small-phone-icon{
+        display: flex;
+    }
+    .container h2{
+        margin: 0;
+    }
+    .container .about-khan{
+        font-size: 10px;
+        width: auto;
+        padding-right: 5px;
+    }
+    .details .footer-links{
+        display: flex;
+        justify-content: center;
+        gap: 3vw;
+    }
+    .container .footer-icons{
+        padding-top: 30px;
+    }
+    .phone{
+        display: none;
+    }
+    .footer-details-more{
+        font-size: 1px;
+        display: block;
+        height: 3cm;
+        margin-left: 205px;
+        
+    }
+    .footer-details-more .rights{
+        font-size: 8px;
+    }
+    .social-right-icons{
+        display: none;
+    }
+    .more-icons{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    .why-choose h2{
+        font-size: 15px;
+    }
+    .why-choose .about-khan-main{
+        width: 300px;
+    }
+    .mobile-eqp-details{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo-footer{
+        display: none;
+    }
+    .logo-footer-mobile{
+        height: 50px;
+        justify-content: center;
+        display: block;
+        margin: auto;
+    }
+    
+
+}
+@media screen and (max-width: 470px){
+    .info2{
+        margin-right: auto;
+        display: block;
+        width: fit-content;
+    }
+}
+@media screen and (max-width: 440px){
+    .details h3{
+        font-size: 10px;
+        text-align: center;
+    }
+    .info-links .about-link{
+        font-size: 5px;
+        width: fit-content;
+    }
+    .learn-more a{
+        font-size: 5px;
+
+    }
+    .learn-more{
+       display: none;
+    }
+    .footer-details-more{
+        font-size: 1px;
+        display: block;
+        height: 3cm;
+        margin-left: 205px;
+    }
+    .footer-details-more .rights{
+        font-size: 8px;
+    }
+    .why-choose h2{
+        font-size: 15px;
+    }
+    .why-choose .about-khan-main{
+        width: 300px;
+    }
+    .mobile-eqp-details{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .logo-footer{
+        display: none;
+    }
+    .logo-footer-mobile{
+        height: 50px;
+        justify-content: center;
+        display: block;
+        margin: auto;
+    }
+    .footer p{
+        font-size: 15px;
+        display: block;
+        margin: auto;
+        padding: 0;
+        padding-top: 20px;
+    }
+}
+@media screen and (max-width: 425px){
+    .why-choose h2{
+        font-size: 12px;
+    }
+    .why-choose .about-khan-main{
+        width: 250px;
+    }
+    .mobile-eqp-details{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 415px){
+    .why-choose h2{
+        font-size: 12px;
+    }
+    .why-choose .about-khan-main{
+        width: 250px;
+    }
+    .mobile-eqp-details{
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+@media screen and (max-width: 390px) {
+    .details-for-mobile .more-details{
+        width: 350px;
+        margin: 0;
+    }
+    .details-for-mobile{
+        width: 350px;
+        margin-top: 20px;
+    }
+    .container2{
+        padding-right: 0;
+    }
+    .logo-footer{
+        display: none;
+    }
+    .logo-footer-mobile{
+        height: 50px;
+        justify-content: center;
+        display: block;
+        margin: auto;
+    }
+    .trademark-heading{
+        font-size: 10px;
+    }
+    .footer p{
+        font-size: 15px;
+        display: block;
+        margin: auto;
+        padding: 0;
+        padding-top: 20px;
+    }
+    .my-rights{
+        display: block;
+    }
+    .why-choose{
+        padding-right: 0;
+        margin-left: 0;
+    }
+}
+@media screen and (max-width: 350px){
+    .why-choose{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+    }
+    .why-choose h2{
+        font-size: 10px;
+    }
+    .about-khan-main{
+        width: 300px;
+        font-size: 10px;
+    }
+    .container2{
+        font-size: 5px;
+        width: auto;
+        position: inherit;
+    }
+    .more-details{
+        width: fit-content;
+        padding: 10px;
+    }
+    .details-for-mobile{
+        width: fit-content;
+    }
+    .details-for-mobile .more-details .mobile-heading h2{
+        font-size: 8px;
+    }
+    .more-details .mobile-about-khan{
+        font-size: 8px;
+        width: 250px;
+    }
+    .mobile-eqp-details{
+        width: 100%;
+        display: flex;
+    }
+    .logo-footer{display: none;}
+    .logo-footer-mobile{
+        display: flex;
+        height: 50px;
+    }
+    .footer p{
+        font-size: 13px;
+    }
+    .details .footer-links li .eqp .quot{
+        font-size: 10px;
+        text-transform: uppercase;
+        font-weight: lighter;
+        background-color: transparent;
+        
+    }
+}
+@media screen and (max-width: 347px) {
+    .details-for-mobile{
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        text-align: center;
+    }
+    .more-details{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+    }
+    .details-for-mobile .more-details .mobile-heading h2{
+        font-size: 10px;
+        color: white;
+        padding: 10px;
+        border-left: 10px solid #ff0303;
+        border-right: 10px solid #ff0303;
+        width: 300px;
+        margin: 0;
+        display: block;
+    }
+    .more-details .mobile-about-khan{
+        padding-top: 20px;
+        line-height: 20px;
+        margin: 0;
+        display: block;
+        font-size: 9px;
+        color: whitesmoke;
+        width: 300px;
+        padding-bottom: 50px;
+    }
+    .mobile-icons{
+        margin-left: 57px;
+        display: block;
+        padding-top: 50px;
+        width: fit-content;
+    } 
+    .mobile-links{
+        margin-left: 30px;
+        margin-right: auto;
+        display: block;
+        width: fit-content;
+       
+    }
+    .mobile-links a{
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    .mobile-links li{
+        padding-right: 9px;
+    }
+    .more-about .mobile-links li a{
+        padding-left: 10px;
+    }
+    .mobile-eqp-details{
+        display: flex;
+    }
+}
+@media screen and (max-width: 347px) {
+    .details-for-mobile{
+        margin-left: auto;
+        margin-right: auto;
+        width: 300px;
+        text-align: center;
+    }
+    .more-details{
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        padding: 0;
+    }
+    .details-for-mobile .more-details .mobile-heading h2{
+        font-size: 8px;
+        color: white;
+        padding: 10px;
+        border-left: 10px solid #ff0303;
+        border-right: 10px solid #ff0303;
+        width: 280px;
+        margin: 0;
+        display: block;
+    }
+    .more-details .mobile-about-khan{
+        padding-top: 20px;
+        line-height: 15px;
+        margin: 0;
+        display: block;
+        font-size: 6px;
+        color: whitesmoke;
+        width: 280px;
+        padding-bottom: 50px;
+    }
+    .mobile-icons{
+        margin-left: 42px;
+        display: block;
+        padding-top: 50px;
+        width: fit-content;
+    } 
+    .mobile-links{
+        margin-left: 15px;
+        margin-right: auto;
+        display: block;
+        width: fit-content;
+       
+    }
+    .mobile-links a{
+        color: white;
+        text-decoration: none;
+        font-size: 10px;
+    }
+    .mobile-links li{
+        padding-right: 9px;
+    }
+    .more-about .mobile-links li a{
+        padding-left: 10px;
+    }
+    .mobile-eqp-details{
+        display: flex;
+    }
+
+}
+@media screen and (max-width: 300px) {
+    .button{
+        padding: 10px 10px;
+    }
+    .container{
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 250px) {
+    .button{
+        padding: 5px;
+    }
+}
