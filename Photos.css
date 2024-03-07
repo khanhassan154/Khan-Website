@@ -1004,7 +1004,7 @@ footer{
 
   }
   .gallery .image img{
-    width: 70%;
+    width: 100%;
     vertical-align: middle;
     transition: all 0.3s ease;
     margin: auto;
