@@ -992,23 +992,30 @@ footer{
     padding-top: 30px;
   }
   .gallery .image{
-    height: 50%;
     width: 20%;
     padding: 10px;
   }
   .gallery .image span{
-    display: flex;
-    width: auto;
-    height: inherit;
+    display: block;
+    width: fit-content;
     overflow: hidden;
-
+    margin: 0;
   }
-  .gallery .image img{
+  .gallery .image p{
+    text-align: center;
+    color: white;
+    padding: 10px;
+  }
+  .gallery .image img,video{
     width: 100%;
-    vertical-align: middle;
+    justify-content: center;
+    display: flex;
     transition: all 0.3s ease;
-    margin: auto;
     border: 5px solid #Fff;
+    margin: 0;
+  }
+  .gallery .image video{
+    border: none;
   }
   .gallery .image:hover img{
     transform: scale(1.1);
