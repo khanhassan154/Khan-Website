@@ -3,4 +3,4 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
 Options +FollowSymLinks
-ErrorDocument 404 https://www.khanengineerings.com/error404
+ErrorDocument 404 https://www.khanengineerings.com/error404.html
