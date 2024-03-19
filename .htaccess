@@ -2,5 +2,5 @@ RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.html -f
 RewriteRule ^(.*)$ $1.html [NC,L]
-
-ErrorDocument 404 https://khanengineerings.com/Error 404
+Options +FollowSymLinks
+ErrorDocument 404 https://www.yourwebsite.com/error404.php
